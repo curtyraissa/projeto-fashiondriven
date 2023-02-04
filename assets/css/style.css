@@ -69,10 +69,16 @@ span {
     border-radius: 50%;
 }
 
+.selected {
+    border: 3px solid #404EED;
+  }
+
 .item-img {
     width: 80px;
     height: 80px;
 }
+
+
 
 h4 {
     display: flex;
@@ -109,6 +115,11 @@ button {
     margin-top: 23px;
     border: none;
 }
+
+  .btn-selected{
+    background-color: #404EED !important;
+    cursor: pointer;
+  }
 
 p {
     font-weight: 400;

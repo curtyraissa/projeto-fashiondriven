@@ -2,99 +2,99 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js"></script>
-    <title>Fashion Driven</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js"></script>
+  <title>Fashion Driven</title>
 </head>
 
 <body>
-    <header>
-        <img class="header-img" src="./assets/img/Logo.png" alt="">
-    </header>
-    <main>
-        <article class="left">
-            <div class="container">
-                <section class="modelo">
-                    <h3>Escolha o modelo</h3>
-                    <div class="itens">
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/tshirt.png" alt=""></span>
-                            <h4>T-shirt</h4>
-                        </div>
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/camiseta.png" alt=""></span>
-                            <h4>Camiseta</h4>
-                        </div>
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/Mangalonga.png" alt=""></span>
-                            <h4>Manga Longa</h4>
-                        </div>
-                    </div>
-                </section>
-                <section class="gola">
-                    <div class="itens">
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/gola-v.png" alt=""></span>
-                            <h4>Gola V</h4>
-                        </div>
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/gola-redonda.png" alt=""></span>
-                            <h4>Gola Redonda</h4>
-                        </div>
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/gola-polo.png" alt=""></span>
-                            <h4>Gola Polo</h4>
-                        </div>
-                    </div>
-                </section>
-                <section class="tecido">
-                    <div class="itens">
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/Seda.png" alt=""></span>
-                            <h4>Seda</h4>
-                        </div>
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/Algodão.png" alt=""></span>
-                            <h4>Algodão</h4>
-                        </div>
-                        <div class="item">
-                            <span><img class="item-img" src="./assets/img/Poliester.png" alt=""></span>
-                            <h4>Poliéster</h4>
-                        </div>
-                    </div>
-                </section>
-                <section class="links">
-                    <label>Imagem de referência</label>
-                    <input type="text" placeholder="Insira o link">
-                    <button>
-                        <p>Confirmar pedido</p>
-                    </button>
-                </section>
+  <header>
+    <img class="header-img" src="./assets/img/Logo.png" alt="">
+  </header>
+  <main>
+    <article class="left">
+      <div class="container">
+        <section class="modelo">
+          <h3>Escolha o modelo</h3>
+          <div class="itens">
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)><img class="item-img" src="./assets/img/tshirt.png" alt=""></span>
+              <h4>T-shirt</h4>
             </div>
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/camiseta.png" alt=""></span>
+              <h4>Camiseta</h4>
+            </div>
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/Mangalonga.png" alt=""></span>
+              <h4>Manga Longa</h4>
+            </div>
+          </div>
+        </section>
+        <section class="gola">
+          <div class="itens">
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/gola-v.png" alt=""></span>
+              <h4>Gola V</h4>
+            </div>
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/gola-redonda.png" alt=""></span>
+              <h4>Gola Redonda</h4>
+            </div>
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/gola-polo.png" alt=""></span>
+              <h4>Gola Polo</h4>
+            </div>
+          </div>
+        </section>
+        <section class="tecido">
+          <div class="itens">
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/Seda.png" alt=""></span>
+              <h4>Seda</h4>
+            </div>
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/Algodão.png" alt=""></span>
+              <h4>Algodão</h4>
+            </div>
+            <div class="item">
+              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/Poliester.png" alt=""></span>
+              <h4>Poliéster</h4>
+            </div>
+          </div>
+        </section>
+        <section class="links">
+          <label>Imagem de referência</label>
+          <input type="text" placeholder="Insira o link">
+          <button class="btn-selected">
+            <p>Confirmar pedido</p>
+          </button>
+        </section>
+      </div>
 
-        </article>
+    </article>
 
 
 
-        <aside class="right">
-            <img class="right-img" src="./assets/img/right-img.svg" alt="">
-        </aside>
+    <aside class="right">
+      <img class="right-img" src="./assets/img/right-img.svg" alt="">
+    </aside>
 
 
-    </main>
-    <footer>
-        <h1>Ultimos pedidos</h1>
-        <ul>
-            <li>
-                <img class="footer-img" src="./assets/img/Blusa1.png" alt="">
-                <h2>Criador: Agata</h2>
-            </li>
-        </ul>
-    </footer>
+  </main>
+  <footer>
+    <h1>Ultimos pedidos</h1>
+    <ul>
+      <li>
+        <img class="footer-img" src="./assets/img/Blusa1.png" alt="">
+        <h2>Criador: Agata</h2>
+      </li>
+    </ul>
+  </footer>
 
 </body>
 
