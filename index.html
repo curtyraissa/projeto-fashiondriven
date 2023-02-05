@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <script src="./assets/js/script.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
   <title>Fashion Driven</title>
 </head>
 
@@ -20,19 +21,19 @@
       <div class="container">
         <section class="modelo">
           <h3>Escolha o modelo</h3>
-          <ul class="itens">
+          <ul class="itens" id="modelo">
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/tshirt.png"
+              <span onclick="selecionarModelo(this)"><img class="item-img" src="./assets/img/tshirt.png"
                   alt="T-Shirt" /></span>
               <h4>T-shirt</h4>
             </li>
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/camiseta.png"
+              <span onclick="selecionarModelo(this)"><img class="item-img" src="./assets/img/camiseta.png"
                   alt="Camiseta" /></span>
               <h4>Camiseta</h4>
             </li>
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/Mangalonga.png"
+              <span onclick="selecionarModelo(this)"><img class="item-img" src="./assets/img/Mangalonga.png"
                   alt="Manga Longa" /></span>
               <h4>Manga Longa</h4>
             </li>
@@ -40,19 +41,19 @@
         </section>
         <section class="gola">
           <h3>Escolha a gola</h3>
-          <ul class="itens">
+          <ul class="itens" id="gola">
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/gola-v.png"
+              <span onclick="selecionarGola(this)"><img class="item-img" src="./assets/img/gola-v.png"
                   alt="Gola V" /></span>
               <h4>Gola V</h4>
             </li>
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img"
+              <span onclick="selecionarGola(this)"><img class="item-img"
                   src="./assets/img/gola-redonda.png" alt="Gola Redonda" /></span>
               <h4>Gola Redonda</h4>
             </li>
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/gola-polo.png"
+              <span onclick="selecionarGola(this)"><img class="item-img" src="./assets/img/gola-polo.png"
                   alt="Gola Polo" /></span>
               <h4>Gola Polo</h4>
             </li>
@@ -60,19 +61,19 @@
         </section>
         <section class="tecido">
           <h3>Escolha o tecido</h3>
-          <ul class="itens">
+          <ul class="itens" id="tecido">
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img seda" src="./assets/img/Seda.png"
+              <span onclick="selecionarTecido(this)"><img class="item-img seda" src="./assets/img/Seda.png"
                   alt="Seda" /></span>
               <h4>Seda</h4>
             </li>
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/Algodão.png"
+              <span onclick="selecionarTecido(this)"><img class="item-img" src="./assets/img/Algodão.png"
                   alt="Algodão" /></span>
               <h4>Algodão</h4>
             </li>
             <li>
-              <span class="selected" onclick="selecionar(this)"><img class="item-img" src="./assets/img/Poliester.png"
+              <span onclick="selecionarTecido(this)"><img class="item-img" src="./assets/img/Poliester.png"
                   alt="Poliéster" /></span>
               <h4>Poliéster</h4>
             </li>
@@ -80,8 +81,8 @@
         </section>
         <section class="links">
           <label>Imagem de referência</label>
-          <input type="text" placeholder="Insira o link" />
-          <button class="btn-selected">
+          <input id="input" type="text" placeholder="Insira o link" />
+          <button id="button" disabled>
             <p>Confirmar pedido</p>
           </button>
         </section>
@@ -94,12 +95,7 @@
   </main>
   <footer>
     <h1>Ultimos pedidos</h1>
-    <ul class="footer-ul">
-      <li class="footer-li">
-        <img class="footer-img" src="./assets/img/Blusa1.png" alt="Blusa" />
-        <h2>Criador: Agata</h2>
-      </li>
-    </ul>
+    <ul class="footer-ul"></ul>
   </footer>
 </body>
 
